@@ -147,3 +147,10 @@ h6{
     float: left;
     z-index: 1;
   }
+  #REimg{
+    border-radius:15%;
+    border-color:Black;
+    border-style: solid;
+    margin-left:0%;
+    size:auto;
+  }
