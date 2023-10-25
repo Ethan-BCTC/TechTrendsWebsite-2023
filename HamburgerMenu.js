@@ -7,4 +7,4 @@ function openNav() {
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
-  alert("Hello");
+  alert("TIMES UP!! \n You correctly identified 17 word(s) in 10 attempt(s). \n You checked the COMPLETE CONJUGATION button 17 time(s). \n YOUR SCORE IS 100 %.");
