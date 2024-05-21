@@ -1,0 +1,129 @@
+:root{
+
+}
+#map{
+    margin: auto auto;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+html{
+    overflow-x: hidden;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    background-color: rgb(192, 192, 192);
+}
+.articalContainer{
+    margin-top: 70px;
+    display: flex;
+}
+section{
+    text-align: center;
+    background-color: white;
+    width: 25vw;
+    border-radius: 100px;
+    margin-left: calc(25vw/4);
+    z-index: 0;
+    min-height: 1000px;
+    display: grid;
+}
+#EVimg #VRimg #DIimg{
+    position: absolute;
+    bottom: 10px;
+}
+
+section img{
+    width: calc(25vw - 100px);
+    border-radius: 20px;
+    padding: 10px;
+}
+.articalHeading{
+    font-size: 20pt;
+    font-weight: 600;
+}
+#Nav-Bar-Sticky{
+    height: 65px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transform: translateX(-10px);
+    background-color: #bdbdbdc4;
+    width: 100vw;
+    z-index: 2;
+}
+#Nav-Bar-Sticky h1{
+    text-align: center;
+    padding-top: 10px
+}
+#hamburger-menu-open{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    animation-name: none;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    z-index: 3;
+}
+#hamburger-menu-content{
+    position: fixed;
+    opacity: 0;
+    transform: translateY(-250px);
+    list-style: none;
+    animation-name: none;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+}
+.Hz-line{
+    position: relative;
+}
+.dropSpace{
+    color: transparent;
+}
+.dropdownCard{
+    color: white;
+    background-color: grey;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+}
+.dropdownCard a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.Hz-menu-icon > .Hz-line {
+    background-color: #292929;
+    height: 8px;
+    display: block;
+    border-radius: 8px;
+}
+.Hz-menu-icon > .Hz-line + .Hz-line {
+    margin-top: 8px;
+}
+article p{
+    width: 80%;
+    margin-left: 10%;
+}
+@keyframes hamburgerMenuAnimation{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(90deg);}
+}
+@keyframes hamburgerMenuContent{
+    from{
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(50px);
+        opacity: 1;
+    }
+}
